@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <form style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+        <input type="text" placeholder="votre nom"><br>
+        <div style="display: flex;align-items: center;">
+        <p>date :</p>
+        <select name="day" id="day"></select>
+        <p>/</p>
+        <select name="mois" id="mois"></select>
+        <p>/</p>
+        <select name="year" id="year"></select>
+        </div>
+        <br>
+        <button>envoyer</button>
+    </form>
+    <script src="./js/main.js"></script>
+</body>
+</html>
