@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'comic sans ms';
+            font-size: 14px;
+            color: blue;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            margin: 0 3px;
+        }
+    </style>
+</head>
+<body>
+    <p id="h"></p>
+    <p>:</p>
+    <p id="m"></p>
+    <p>:</p>
+    <p id="s"></p>
+    <script>
+        var hp = document.getElementById('h')
+        var mp = document.getElementById('m')
+        var sp = document.getElementById('s')
+        setInterval(() => {
+            let day = new Date();
+            let hh = day.getHours()
+            let mm = day.getMinutes()
+            let ss = day.getSeconds()
+            hp.innerHTML = hh
+            mp.innerHTML = mm
+            sp.innerHTML = ss
+        });
+    </script>
+</body>
+</html>
